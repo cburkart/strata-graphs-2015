@@ -35,3 +35,5 @@ lines(plotdat.df$Unemployment[rec.end:nrow(plotdat.df)], plotdat.df$JobOpenRate[
 label.df <- plotdat.df[c(37,49,61,121),]
 textxy(label.df$Unemployment, label.df$JobOpenRate, label.df$Date, cex=.85)
 
+
+
