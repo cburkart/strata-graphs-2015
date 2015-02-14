@@ -24,7 +24,7 @@ names(workdat.df) <- c('Date','Unemployment','JobOpenRate','LaborForce','Recessi
 #M <- gvisMotionChart(workdat.df, idvar='Null', timevar='Date')
 
 plotdat.df <- data.frame(workdat.df$Unemployment, workdat.df$JobOpenRate, substr(index(workdat.xts),1,7))
-names(plotdat.df) <- c('Unemployment','JobOpenRate','Date', )
+names(plotdat.df) <- c('Unemployment','JobOpenRate','Date')
 plot(plotdat.df$Unemployment, plotdat.df$JobOpenRate, col='white', xlab="Unemployment Rate",ylab="Job Openings Rate", xlim=c(4.5,10.6), ylim=c(1.5,3.6))
 lines(plotdat.df$Unemployment[1:rec.start], plotdat.df$JobOpenRate[1:rec.start], col='darkgreen', lwd=2)
 lines(plotdat.df$Unemployment[(rec.start):rec.end], plotdat.df$JobOpenRate[(rec.start):rec.end], col='red',lwd=2)
